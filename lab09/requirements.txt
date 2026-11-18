@@ -1,0 +1,5 @@
+neo4j>=5.20
+rdflib>=7.0
+networkx>=3.0
+# необов'язково, лише для run_all.py --live (text-to-Cypher через API):
+# anthropic>=0.40

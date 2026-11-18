@@ -1,0 +1,8 @@
+from,to,source,confidence,validFrom
+ev-0001,rec-0001,cmms,1.0,2026-11-09
+ev-0003,rec-0002,cmms,1.0,2026-11-07
+ev-0005,rec-0003,cmms,1.0,2026-07-06
+ev-0009,rec-0004,cmms,1.0,2026-05-08
+ev-0013,rec-0005,cmms,1.0,2026-06-15
+ev-0017,rec-0006,cmms,1.0,2026-03-24
+ev-0021,rec-0007,cmms,1.0,2026-09-15

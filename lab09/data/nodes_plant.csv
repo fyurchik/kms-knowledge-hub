@@ -1,0 +1,7 @@
+id,name,kind,installedCapacityMW,commissioningDate
+wf-karpatska,ВЕС «Карпатська»,WindFarm,52.8,2021-06-15
+wf-sambir,ВЕС «Самбірська»,WindFarm,25.2,2023-09-01
+wf-uzhok,ВЕС «Ужоцька»,WindFarm,25.2,2024-04-10
+sp-halych,СЕС «Галич-1»,SolarPlant,12.0,2020-05-20
+sp-kolomyia,СЕС «Коломия»,SolarPlant,9.6,2022-07-01
+sp-mukachevo,СЕС «Мукачево»,SolarPlant,8.0,2023-05-12

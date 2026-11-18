@@ -1,0 +1,9 @@
+# P2. Яке обладнання має технічний стан нижче 80 %?
+PREFIX res:  <https://kms.lnu.edu.ua/fenyn/res#>
+PREFIX id:   <https://kms.lnu.edu.ua/fenyn/res/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?e ?health WHERE {
+  ?e a res:Equipment ; res:stateOfHealth ?health .
+  FILTER(?health < 80)
+}
+ORDER BY ?health ?e

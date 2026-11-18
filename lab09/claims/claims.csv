@@ -1,0 +1,16 @@
+id,claim,type,source,verification_level,status,comment
+CL-01,Граф містить 307 вузлів і 500 зв'язків (≥ 100 / ≥ 200),факт,scripts/generate_data.py,V2,verified,підраховано з CSV; у Neo4j підтверджується import_report.md
+CL-02,Схема має 15 міток і 18 типів зв'язків,факт,LLM (схема),V2,verified,перевірено scripts/draw_schema.py за даними
+CL-03,Кожен із 10 CQ має шаблон шляху Cypher,правило,LLM (схема),V2,verified,docs/cq_mapping.md
+CL-04,Повторний імпорт через MERGE не створює дублікатів,гіпотеза,LLM (імпорт),V2,verified,307/500 після першого і повторного імпорту (import_report.md)
+CL-05,Обмеження entity_id_unique відхиляє дублікат id,гіпотеза,LLM (імпорт),V2,verified,ConstraintValidationFailed: Node(275) already exists… (import_report.md)
+CL-06,Генератор даних створює унікальні id,факт,LLM (генератор),V2,rejected,у першій версії два накопичувачі мали id bess-k01; виправлено префіксом KL
+CL-07,"q01–q10 повертають результати, що збігаються з незалежним розрахунком",гіпотеза,LLM (запити),V2,verified,усі 10 запитів збіглися з tests/expected.json (cypher_results.md)
+CL-08,"Відмова ПС «Івано-Франківськ» зупинить 19 одиниць і 21,6 МВт ФЕМ",факт,q09 + expected.py,V2,verified,"перевірено вручну (cypher_results.md, ручна перевірка)"
+CL-09,Найкоротший шлях ev-0001 → sub-lviv має довжину 3,факт,q06 + expected.py,V2,verified,BFS на Python
+CL-10,PageRank виділяє станції як центральні вузли,гіпотеза,gds_preview.py (networkx),V2,verified,"GDS: топ-1 ВЕС «Карпатська» (5,907), 5 станцій у топ-10"
+CL-11,"Louvain виділяє спільноти, що відповідають станціям",гіпотеза,gds_preview.py (networkx),V2,verified,"GDS Louvain: 10 спільнот, модульність 0,708; великі спільноти – станції"
+CL-12,Індекс event_occurred_at зменшує dbHits запиту q03,гіпотеза,LLM (оптимізація),V2,verified,"PROFILE q03: 120 → 89 dbHits, NodeByLabelScan → NodeIndexSeekByRange"
+CL-13,SPARQL і Cypher дають однакові результати на 5 питаннях,гіпотеза,LLM (порівняння),V2,verified,5 з 5 пар збіглися (sparql_vs_cypher.md)
+CL-14,Згенеровані text-to-Cypher запити не містять операцій запису,правило,LLM (t2c),V2,verified,перевірено фільтром t2c.guard для всіх 13 відповідей
+CL-15,Частка коректних text-to-Cypher запитів,метрика,LLM (t2c),V4,verified,"9/12 коректних (75 %), точний збіг 7/12; помилки t04, t05, t11 проаналізовано"

@@ -1,0 +1,7 @@
+from,to,source,confidence,validFrom
+wf-karpatska,co-zakhid-vde,onto-lab06,1.0,2026-01-01
+wf-sambir,co-zakhid-vde,onto-lab06,1.0,2026-01-01
+wf-uzhok,co-karpaty-energy,onto-lab06,1.0,2026-01-01
+sp-halych,co-halych-solar,onto-lab06,1.0,2026-01-01
+sp-kolomyia,co-halych-solar,onto-lab06,1.0,2026-01-01
+sp-mukachevo,co-karpaty-energy,onto-lab06,1.0,2026-01-01
