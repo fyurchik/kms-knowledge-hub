@@ -1,0 +1,29 @@
+id,name,kind,costEUR,startedAt
+mw-0001,Ремонт редуктора K-02,CorrectiveRepair,8400.0,2026-11-09T14:30:00
+mw-0002,Заміна модуля інвертора H-02,CorrectiveRepair,3650.0,2026-11-07T13:00:00
+mw-0003,Усунення: перегрів генератора (wt-s03),CorrectiveRepair,1970.0,2026-07-07T00:00:00
+mw-0004,Усунення: знос підшипника редуктора (wt-u04),CorrectiveRepair,2780.0,2026-10-07T13:00:00
+mw-0005,Усунення: несправність приводу кута атаки (wt-s05),CorrectiveRepair,4500.0,2026-05-08T12:00:00
+mw-0006,Усунення: відмова датчика температури (wt-k06),CorrectiveRepair,1375.0,2026-08-18T19:00:00
+mw-0007,Усунення: відмова igbt-модуля (inv-kl04),CorrectiveRepair,2550.0,2026-06-15T23:00:00
+mw-0008,Усунення: перегорання запобіжника dc (inv-h01),CorrectiveRepair,1220.0,2026-02-24T00:00:00
+mw-0009,Усунення: перегрів генератора (wt-u05),CorrectiveRepair,1520.0,2026-03-25T06:00:00
+mw-0010,Усунення: знос підшипника редуктора (wt-u01),CorrectiveRepair,3130.0,2026-08-29T01:00:00
+mw-0011,Усунення: несправність приводу кута атаки (wt-k08),CorrectiveRepair,3450.0,2026-09-15T11:00:00
+mw-0012,Усунення: відмова датчика температури (wt-u05),CorrectiveRepair,525.0,2026-01-04T08:00:00
+mw-0013,Планове ТО (inv-kl02),PlannedMaintenance,250.0,2026-09-03T09:00:00
+mw-0014,Планове ТО (wt-s04),PlannedMaintenance,1250.0,2026-04-13T09:00:00
+mw-0015,Планове ТО (wt-k08),PlannedMaintenance,1100.0,2026-10-02T09:00:00
+mw-0016,Планове ТО (inv-kl04),PlannedMaintenance,1250.0,2026-10-19T09:00:00
+mw-0017,Планове ТО (inv-h02),PlannedMaintenance,500.0,2026-11-23T09:00:00
+mw-0018,Планове ТО (pv-h01),PlannedMaintenance,800.0,2026-03-22T09:00:00
+mw-0019,Планове ТО (inv-m02),PlannedMaintenance,700.0,2026-02-01T09:00:00
+mw-0020,Планове ТО (pv-m02),PlannedMaintenance,1050.0,2026-04-17T09:00:00
+mw-0021,Планове ТО (wt-u03),PlannedMaintenance,300.0,2026-04-12T09:00:00
+mw-0022,Планове ТО (wt-u05),PlannedMaintenance,1500.0,2026-09-23T09:00:00
+mw-0023,Планове ТО (wt-u06),PlannedMaintenance,1250.0,2026-02-05T09:00:00
+mw-0024,Планове ТО (wt-u03),PlannedMaintenance,1350.0,2026-09-05T09:00:00
+mw-0025,Планове ТО (wt-u04),PlannedMaintenance,1300.0,2026-06-07T09:00:00
+mw-0026,Планове ТО (inv-m04),PlannedMaintenance,600.0,2026-01-03T09:00:00
+mw-0027,Планове ТО (inv-m01),PlannedMaintenance,250.0,2026-01-11T09:00:00
+mw-0028,Планове ТО (wt-s01),PlannedMaintenance,1350.0,2026-08-18T09:00:00

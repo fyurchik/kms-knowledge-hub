@@ -1,0 +1,10 @@
+# P1. Скільки обладнання кожного типу встановлено на ВЕС «Карпатська» і яка його потужність?
+PREFIX res:  <https://kms.lnu.edu.ua/fenyn/res#>
+PREFIX id:   <https://kms.lnu.edu.ua/fenyn/res/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?kind (COUNT(?e) AS ?units) (SUM(COALESCE(?kw, 0)) AS ?totalKW) WHERE {
+  ?e res:installedAt id:wf-karpatska ; a res:Equipment ; res:kind ?kind .
+  OPTIONAL { ?e res:ratedPowerKW ?kw }
+}
+GROUP BY ?kind
+ORDER BY DESC(?totalKW) ?kind

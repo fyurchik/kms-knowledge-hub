@@ -1,0 +1,10 @@
+# P4 (вплив). Яке обладнання транзитивно залежить від ПС «Івано-Франківськ»?
+PREFIX res:  <https://kms.lnu.edu.ua/fenyn/res#>
+PREFIX id:   <https://kms.lnu.edu.ua/fenyn/res/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?plantName ?kind (COUNT(DISTINCT ?x) AS ?affected) WHERE {
+  ?x res:dependsOn+ id:sub-ivano-frankivsk ; res:kind ?kind ; res:installedAt ?plant .
+  ?plant rdfs:label ?plantName .
+}
+GROUP BY ?plantName ?kind
+ORDER BY ?plantName ?kind

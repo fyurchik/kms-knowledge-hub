@@ -1,0 +1,2433 @@
+@prefix id: <https://kms.lnu.edu.ua/fenyn/res/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://kms.lnu.edu.ua/fenyn/res#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+id:emp-savchuk a res:Employee ;
+    rdfs:label "Марія Савчук"@uk ;
+    res:email "savchuk@zakhid-vde.ua" ;
+    res:employedBy id:co-zakhid-vde ;
+    res:position "інженер-аналітик" .
+
+id:ev-0024 a res:CurtailmentEvent,
+        res:Event ;
+    rdfs:label "Обмеження генерації (wt-k01)"@uk ;
+    res:affects id:wt-k01 ;
+    res:durationH 4.0 ;
+    res:kind "CurtailmentEvent" ;
+    res:occurredAt "2026-09-09T13:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0025 a res:CurtailmentEvent,
+        res:Event ;
+    rdfs:label "Обмеження генерації (wt-s02)"@uk ;
+    res:affects id:wt-s02 ;
+    res:durationH 5.0 ;
+    res:kind "CurtailmentEvent" ;
+    res:occurredAt "2026-09-23T13:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0026 a res:CurtailmentEvent,
+        res:Event ;
+    rdfs:label "Обмеження генерації (wt-u02)"@uk ;
+    res:affects id:wt-u02 ;
+    res:durationH 3.0 ;
+    res:kind "CurtailmentEvent" ;
+    res:occurredAt "2026-05-07T13:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0027 a res:CurtailmentEvent,
+        res:Event ;
+    rdfs:label "Обмеження генерації (wt-k07)"@uk ;
+    res:affects id:wt-k07 ;
+    res:durationH 5.0 ;
+    res:kind "CurtailmentEvent" ;
+    res:occurredAt "2026-03-19T13:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0028 a res:CurtailmentEvent,
+        res:Event ;
+    rdfs:label "Обмеження генерації (wt-k02)"@uk ;
+    res:affects id:wt-k02 ;
+    res:durationH 1.0 ;
+    res:kind "CurtailmentEvent" ;
+    res:occurredAt "2026-08-02T13:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:fc-sp-halych-20261111 a res:Forecast ;
+    rdfs:label "Прогноз СЕС «Галич-1» 11.11.2026"@uk ;
+    res:basedOn id:wd-sp-halych-20261111 ;
+    res:forecastDate "2026-11-11"^^xsd:date ;
+    res:forecastFor id:sp-halych ;
+    res:forecastMWh 120.1 .
+
+id:fc-sp-kolomyia-20261111 a res:Forecast ;
+    rdfs:label "Прогноз СЕС «Коломия» 11.11.2026"@uk ;
+    res:basedOn id:wd-sp-kolomyia-20261111 ;
+    res:forecastDate "2026-11-11"^^xsd:date ;
+    res:forecastFor id:sp-kolomyia ;
+    res:forecastMWh 83.1 .
+
+id:fc-sp-mukachevo-20261111 a res:Forecast ;
+    rdfs:label "Прогноз СЕС «Мукачево» 11.11.2026"@uk ;
+    res:basedOn id:wd-sp-mukachevo-20261111 ;
+    res:forecastDate "2026-11-11"^^xsd:date ;
+    res:forecastFor id:sp-mukachevo ;
+    res:forecastMWh 52.9 .
+
+id:fc-wf-karpatska-20261111 a res:Forecast ;
+    rdfs:label "Прогноз ВЕС «Карпатська» 11.11.2026"@uk ;
+    res:basedOn id:wd-wf-karpatska-20261111 ;
+    res:forecastDate "2026-11-11"^^xsd:date ;
+    res:forecastFor id:wf-karpatska ;
+    res:forecastMWh 459.0 .
+
+id:fc-wf-sambir-20261111 a res:Forecast ;
+    rdfs:label "Прогноз ВЕС «Самбірська» 11.11.2026"@uk ;
+    res:basedOn id:wd-wf-sambir-20261111 ;
+    res:forecastDate "2026-11-11"^^xsd:date ;
+    res:forecastFor id:wf-sambir ;
+    res:forecastMWh 265.5 .
+
+id:fc-wf-uzhok-20261111 a res:Forecast ;
+    rdfs:label "Прогноз ВЕС «Ужоцька» 11.11.2026"@uk ;
+    res:basedOn id:wd-wf-uzhok-20261111 ;
+    res:forecastDate "2026-11-11"^^xsd:date ;
+    res:forecastFor id:wf-uzhok ;
+    res:forecastMWh 169.2 .
+
+id:m-0001 a res:Measurement ;
+    res:measuredBy id:tmp-k01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 62.3 .
+
+id:m-0002 a res:Measurement ;
+    res:measuredBy id:tmp-k01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 56.4 .
+
+id:m-0003 a res:Measurement ;
+    res:measuredBy id:tmp-k02 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 76.7 .
+
+id:m-0004 a res:Measurement ;
+    res:measuredBy id:tmp-k02 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 88.5 .
+
+id:m-0005 a res:Measurement ;
+    res:measuredBy id:tmp-k03 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 69.3 .
+
+id:m-0006 a res:Measurement ;
+    res:measuredBy id:tmp-k03 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 54.8 .
+
+id:m-0007 a res:Measurement ;
+    res:measuredBy id:tmp-k04 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 58.1 .
+
+id:m-0008 a res:Measurement ;
+    res:measuredBy id:tmp-k04 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 71.8 .
+
+id:m-0009 a res:Measurement ;
+    res:measuredBy id:tmp-k05 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 49.7 .
+
+id:m-0010 a res:Measurement ;
+    res:measuredBy id:tmp-k05 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 73.5 .
+
+id:m-0011 a res:Measurement ;
+    res:measuredBy id:tmp-k06 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 73.0 .
+
+id:m-0012 a res:Measurement ;
+    res:measuredBy id:tmp-k06 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 60.4 .
+
+id:m-0013 a res:Measurement ;
+    res:measuredBy id:tmp-k07 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 50.1 .
+
+id:m-0014 a res:Measurement ;
+    res:measuredBy id:tmp-k07 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 76.3 .
+
+id:m-0015 a res:Measurement ;
+    res:measuredBy id:tmp-k08 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 65.6 .
+
+id:m-0016 a res:Measurement ;
+    res:measuredBy id:tmp-k08 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 70.3 .
+
+id:m-0017 a res:Measurement ;
+    res:measuredBy id:tmp-s01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 54.6 .
+
+id:m-0018 a res:Measurement ;
+    res:measuredBy id:tmp-s01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 63.5 .
+
+id:m-0019 a res:Measurement ;
+    res:measuredBy id:tmp-s02 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 75.4 .
+
+id:m-0020 a res:Measurement ;
+    res:measuredBy id:tmp-s02 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 67.9 .
+
+id:m-0021 a res:Measurement ;
+    res:measuredBy id:tmp-s03 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 52.4 .
+
+id:m-0022 a res:Measurement ;
+    res:measuredBy id:tmp-s03 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 52.3 .
+
+id:m-0023 a res:Measurement ;
+    res:measuredBy id:tmp-s04 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 71.1 .
+
+id:m-0024 a res:Measurement ;
+    res:measuredBy id:tmp-s04 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 64.7 .
+
+id:m-0025 a res:Measurement ;
+    res:measuredBy id:tmp-s05 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 71.2 .
+
+id:m-0026 a res:Measurement ;
+    res:measuredBy id:tmp-s05 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 61.3 .
+
+id:m-0027 a res:Measurement ;
+    res:measuredBy id:tmp-s06 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 66.1 .
+
+id:m-0028 a res:Measurement ;
+    res:measuredBy id:tmp-s06 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 59.2 .
+
+id:m-0029 a res:Measurement ;
+    res:measuredBy id:tmp-u01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 78.9 .
+
+id:m-0030 a res:Measurement ;
+    res:measuredBy id:tmp-u01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 52.3 .
+
+id:m-0031 a res:Measurement ;
+    res:measuredBy id:tmp-u02 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 63.3 .
+
+id:m-0032 a res:Measurement ;
+    res:measuredBy id:tmp-u02 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 71.4 .
+
+id:m-0033 a res:Measurement ;
+    res:measuredBy id:tmp-u03 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 74.7 .
+
+id:m-0034 a res:Measurement ;
+    res:measuredBy id:tmp-u03 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 52.7 .
+
+id:m-0035 a res:Measurement ;
+    res:measuredBy id:tmp-u04 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 53.0 .
+
+id:m-0036 a res:Measurement ;
+    res:measuredBy id:tmp-u04 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 69.1 .
+
+id:m-0037 a res:Measurement ;
+    res:measuredBy id:tmp-u05 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 66.5 .
+
+id:m-0038 a res:Measurement ;
+    res:measuredBy id:tmp-u05 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 59.9 .
+
+id:m-0039 a res:Measurement ;
+    res:measuredBy id:tmp-u06 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 66.5 .
+
+id:m-0040 a res:Measurement ;
+    res:measuredBy id:tmp-u06 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "°C" ;
+    res:value 62.5 .
+
+id:m-0041 a res:Measurement ;
+    res:measuredBy id:anm-k01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "м/с" ;
+    res:value 11.3 .
+
+id:m-0042 a res:Measurement ;
+    res:measuredBy id:anm-k01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "м/с" ;
+    res:value 17.6 .
+
+id:m-0043 a res:Measurement ;
+    res:measuredBy id:anm-s01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "м/с" ;
+    res:value 25.8 .
+
+id:m-0044 a res:Measurement ;
+    res:measuredBy id:anm-s01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "м/с" ;
+    res:value 20.3 .
+
+id:m-0045 a res:Measurement ;
+    res:measuredBy id:anm-u01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "м/с" ;
+    res:value 8.4 .
+
+id:m-0046 a res:Measurement ;
+    res:measuredBy id:anm-u01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "м/с" ;
+    res:value 24.6 .
+
+id:m-0047 a res:Measurement ;
+    res:measuredBy id:pyr-h01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "Вт/м²" ;
+    res:value 534.0 .
+
+id:m-0048 a res:Measurement ;
+    res:measuredBy id:pyr-h01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "Вт/м²" ;
+    res:value 286.0 .
+
+id:m-0049 a res:Measurement ;
+    res:measuredBy id:pyr-kl01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "Вт/м²" ;
+    res:value 543.0 .
+
+id:m-0050 a res:Measurement ;
+    res:measuredBy id:pyr-kl01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "Вт/м²" ;
+    res:value 478.0 .
+
+id:m-0051 a res:Measurement ;
+    res:measuredBy id:pyr-m01 ;
+    res:observedAt "2026-11-09T06:00:00"^^xsd:dateTime ;
+    res:unit "Вт/м²" ;
+    res:value 324.0 .
+
+id:m-0052 a res:Measurement ;
+    res:measuredBy id:pyr-m01 ;
+    res:observedAt "2026-11-09T12:00:00"^^xsd:dateTime ;
+    res:unit "Вт/м²" ;
+    res:value 207.0 .
+
+id:mw-0001 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Ремонт редуктора K-02"@uk ;
+    res:costEUR 8400.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-kovalchuk ;
+    res:startedAt "2026-11-09T14:30:00"^^xsd:dateTime ;
+    res:targets id:wt-k02 ;
+    res:triggeredBy id:ev-0001 ;
+    res:usesPart id:part-bearing,
+        id:part-filter,
+        id:part-oil .
+
+id:mw-0002 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Заміна модуля інвертора H-02"@uk ;
+    res:costEUR 3650.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-boiko ;
+    res:startedAt "2026-11-07T13:00:00"^^xsd:dateTime ;
+    res:targets id:inv-h02 ;
+    res:triggeredBy id:ev-0003 ;
+    res:usesPart id:part-fuse,
+        id:part-igbt .
+
+id:mw-0003 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: перегрів генератора (wt-s03)"@uk ;
+    res:costEUR 1970.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-kovalchuk ;
+    res:startedAt "2026-07-07T00:00:00"^^xsd:dateTime ;
+    res:targets id:wt-s03 ;
+    res:triggeredBy id:ev-0005 ;
+    res:usesPart id:part-brush,
+        id:part-fan .
+
+id:mw-0004 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: знос підшипника редуктора (wt-u04)"@uk ;
+    res:costEUR 2780.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-bilyk ;
+    res:startedAt "2026-10-07T13:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u04 ;
+    res:triggeredBy id:ev-0007 ;
+    res:usesPart id:part-bearing,
+        id:part-oil .
+
+id:mw-0005 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: несправність приводу кута атаки (wt-s05)"@uk ;
+    res:costEUR 4500.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-danyliuk ;
+    res:startedAt "2026-05-08T12:00:00"^^xsd:dateTime ;
+    res:targets id:wt-s05 ;
+    res:triggeredBy id:ev-0009 ;
+    res:usesPart id:part-pitch .
+
+id:mw-0006 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: відмова датчика температури (wt-k06)"@uk ;
+    res:costEUR 1375.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-melnyk ;
+    res:startedAt "2026-08-18T19:00:00"^^xsd:dateTime ;
+    res:targets id:wt-k06 ;
+    res:triggeredBy id:ev-0011 ;
+    res:usesPart id:part-sensor .
+
+id:mw-0007 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: відмова igbt-модуля (inv-kl04)"@uk ;
+    res:costEUR 2550.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-boiko ;
+    res:startedAt "2026-06-15T23:00:00"^^xsd:dateTime ;
+    res:targets id:inv-kl04 ;
+    res:triggeredBy id:ev-0013 ;
+    res:usesPart id:part-igbt .
+
+id:mw-0008 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: перегорання запобіжника dc (inv-h01)"@uk ;
+    res:costEUR 1220.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-kravets ;
+    res:startedAt "2026-02-24T00:00:00"^^xsd:dateTime ;
+    res:targets id:inv-h01 ;
+    res:triggeredBy id:ev-0015 ;
+    res:usesPart id:part-cable,
+        id:part-fuse .
+
+id:mw-0009 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: перегрів генератора (wt-u05)"@uk ;
+    res:costEUR 1520.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-bilyk ;
+    res:startedAt "2026-03-25T06:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u05 ;
+    res:triggeredBy id:ev-0017 ;
+    res:usesPart id:part-brush,
+        id:part-fan .
+
+id:mw-0010 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: знос підшипника редуктора (wt-u01)"@uk ;
+    res:costEUR 3130.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-popovych ;
+    res:startedAt "2026-08-29T01:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u01 ;
+    res:triggeredBy id:ev-0019 ;
+    res:usesPart id:part-bearing,
+        id:part-oil .
+
+id:mw-0011 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: несправність приводу кута атаки (wt-k08)"@uk ;
+    res:costEUR 3450.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-danyliuk ;
+    res:startedAt "2026-09-15T11:00:00"^^xsd:dateTime ;
+    res:targets id:wt-k08 ;
+    res:triggeredBy id:ev-0021 ;
+    res:usesPart id:part-pitch .
+
+id:mw-0012 a res:CorrectiveRepair,
+        res:MaintenanceWork ;
+    rdfs:label "Усунення: відмова датчика температури (wt-u05)"@uk ;
+    res:costEUR 525.0 ;
+    res:kind "CorrectiveRepair" ;
+    res:performedBy id:emp-popovych ;
+    res:startedAt "2026-01-04T08:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u05 ;
+    res:triggeredBy id:ev-0023 ;
+    res:usesPart id:part-sensor .
+
+id:mw-0013 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (inv-kl02)"@uk ;
+    res:costEUR 250.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-tkach ;
+    res:startedAt "2026-09-03T09:00:00"^^xsd:dateTime ;
+    res:targets id:inv-kl02 ;
+    res:usesPart id:part-filter,
+        id:part-oil .
+
+id:mw-0014 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-s04)"@uk ;
+    res:costEUR 1250.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-kovalchuk ;
+    res:startedAt "2026-04-13T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-s04 .
+
+id:mw-0015 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-k08)"@uk ;
+    res:costEUR 1100.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-danyliuk ;
+    res:startedAt "2026-10-02T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-k08 ;
+    res:usesPart id:part-filter,
+        id:part-oil .
+
+id:mw-0016 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (inv-kl04)"@uk ;
+    res:costEUR 1250.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-boiko ;
+    res:startedAt "2026-10-19T09:00:00"^^xsd:dateTime ;
+    res:targets id:inv-kl04 ;
+    res:usesPart id:part-cable .
+
+id:mw-0017 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (inv-h02)"@uk ;
+    res:costEUR 500.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-tkach ;
+    res:startedAt "2026-11-23T09:00:00"^^xsd:dateTime ;
+    res:targets id:inv-h02 ;
+    res:usesPart id:part-filter .
+
+id:mw-0018 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (pv-h01)"@uk ;
+    res:costEUR 800.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-boiko ;
+    res:startedAt "2026-03-22T09:00:00"^^xsd:dateTime ;
+    res:targets id:pv-h01 ;
+    res:usesPart id:part-filter .
+
+id:mw-0019 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (inv-m02)"@uk ;
+    res:costEUR 700.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-lukach ;
+    res:startedAt "2026-02-01T09:00:00"^^xsd:dateTime ;
+    res:targets id:inv-m02 ;
+    res:usesPart id:part-cable .
+
+id:mw-0020 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (pv-m02)"@uk ;
+    res:costEUR 1050.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-popovych ;
+    res:startedAt "2026-04-17T09:00:00"^^xsd:dateTime ;
+    res:targets id:pv-m02 .
+
+id:mw-0021 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-u03)"@uk ;
+    res:costEUR 300.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-fedak ;
+    res:startedAt "2026-04-12T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u03 ;
+    res:usesPart id:part-filter .
+
+id:mw-0022 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-u05)"@uk ;
+    res:costEUR 1500.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-fedak ;
+    res:startedAt "2026-09-23T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u05 ;
+    res:usesPart id:part-cable .
+
+id:mw-0023 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-u06)"@uk ;
+    res:costEUR 1250.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-popovych ;
+    res:startedAt "2026-02-05T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u06 ;
+    res:usesPart id:part-filter .
+
+id:mw-0024 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-u03)"@uk ;
+    res:costEUR 1350.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-popovych ;
+    res:startedAt "2026-09-05T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u03 .
+
+id:mw-0025 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-u04)"@uk ;
+    res:costEUR 1300.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-lukach ;
+    res:startedAt "2026-06-07T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-u04 ;
+    res:usesPart id:part-filter,
+        id:part-oil .
+
+id:mw-0026 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (inv-m04)"@uk ;
+    res:costEUR 600.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-lukach ;
+    res:startedAt "2026-01-03T09:00:00"^^xsd:dateTime ;
+    res:targets id:inv-m04 ;
+    res:usesPart id:part-cable .
+
+id:mw-0027 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (inv-m01)"@uk ;
+    res:costEUR 250.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-bilyk ;
+    res:startedAt "2026-01-11T09:00:00"^^xsd:dateTime ;
+    res:targets id:inv-m01 ;
+    res:usesPart id:part-filter .
+
+id:mw-0028 a res:MaintenanceWork,
+        res:PlannedMaintenance ;
+    rdfs:label "Планове ТО (wt-s01)"@uk ;
+    res:costEUR 1350.0 ;
+    res:kind "PlannedMaintenance" ;
+    res:performedBy id:emp-hnatiuk ;
+    res:startedAt "2026-08-18T09:00:00"^^xsd:dateTime ;
+    res:targets id:wt-s01 ;
+    res:usesPart id:part-filter,
+        id:part-oil .
+
+id:pv-h02 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ H-02"@uk ;
+    res:dependsOn id:inv-h02 ;
+    res:installedAt id:sp-halych ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 3000.0 ;
+    res:stateOfHealth 98.0 .
+
+id:pv-h03 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ H-03"@uk ;
+    res:dependsOn id:inv-h03 ;
+    res:installedAt id:sp-halych ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 3000.0 ;
+    res:stateOfHealth 98.0 .
+
+id:pv-h04 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ H-04"@uk ;
+    res:dependsOn id:inv-h04 ;
+    res:installedAt id:sp-halych ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 3000.0 ;
+    res:stateOfHealth 91.0 .
+
+id:pv-kl02 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ KL-02"@uk ;
+    res:dependsOn id:inv-kl02 ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2400.0 ;
+    res:stateOfHealth 87.0 .
+
+id:pv-kl03 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ KL-03"@uk ;
+    res:dependsOn id:inv-kl03 ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2400.0 ;
+    res:stateOfHealth 90.0 .
+
+id:pv-kl04 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ KL-04"@uk ;
+    res:dependsOn id:inv-kl04 ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2400.0 ;
+    res:stateOfHealth 95.0 .
+
+id:pv-m03 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ M-03"@uk ;
+    res:dependsOn id:inv-m03 ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2000.0 ;
+    res:stateOfHealth 87.0 .
+
+id:pv-m04 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ M-04"@uk ;
+    res:dependsOn id:inv-m04 ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2000.0 ;
+    res:stateOfHealth 96.0 .
+
+id:rule-cheap-charge a res:ControlRule ;
+    rdfs:label "Заряджання за низької ціни"@uk ;
+    res:conditionText "ціна РДН < 50 EUR/МВт·год і SoC < 90 %" ;
+    res:controls id:bess-k01,
+        id:bess-kl01 .
+
+id:rule-inverter-derate a res:ControlRule ;
+    rdfs:label "Обмеження інвертора при перегріві"@uk ;
+    res:conditionText "температура IGBT > 70 °C" ;
+    res:controls id:inv-h01,
+        id:inv-h02,
+        id:inv-h03,
+        id:inv-h04,
+        id:inv-kl01,
+        id:inv-kl02,
+        id:inv-kl03,
+        id:inv-kl04,
+        id:inv-m01,
+        id:inv-m02,
+        id:inv-m03,
+        id:inv-m04 .
+
+id:rule-overheat a res:ControlRule ;
+    rdfs:label "Зниження потужності при перегріві"@uk ;
+    res:conditionText "температура редуктора > 85 °C" ;
+    res:controls id:wt-k01,
+        id:wt-k02,
+        id:wt-k03,
+        id:wt-k04,
+        id:wt-k05,
+        id:wt-k06,
+        id:wt-k07,
+        id:wt-k08 .
+
+id:rule-storm-stop a res:ControlRule ;
+    rdfs:label "Зупинка при штормовому вітрі"@uk ;
+    res:conditionText "швидкість вітру > 25 м/с протягом 10 с" ;
+    res:controls id:wt-k01,
+        id:wt-k02,
+        id:wt-k03,
+        id:wt-k04,
+        id:wt-k05,
+        id:wt-k06,
+        id:wt-k07,
+        id:wt-k08,
+        id:wt-s01,
+        id:wt-s02,
+        id:wt-s03,
+        id:wt-s04,
+        id:wt-s05,
+        id:wt-s06,
+        id:wt-u01,
+        id:wt-u02,
+        id:wt-u03,
+        id:wt-u04,
+        id:wt-u05,
+        id:wt-u06 .
+
+id:bess-k01 a res:BatteryStorage,
+        res:Equipment ;
+    rdfs:label "Накопичувач BESS-K01"@uk ;
+    res:capacityMWh 5.0 ;
+    res:dependsOn id:tr-karpatska ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "BatteryStorage" ;
+    res:model "Tesla Megapack 2" ;
+    res:ratedPowerKW 2500.0 ;
+    res:stateOfHealth 91.0 .
+
+id:bess-kl01 a res:BatteryStorage,
+        res:Equipment ;
+    rdfs:label "Накопичувач BESS-KL01"@uk ;
+    res:capacityMWh 2.0 ;
+    res:dependsOn id:tr-kolomyia ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "BatteryStorage" ;
+    res:model "Tesla Megapack 2" ;
+    res:ratedPowerKW 1000.0 ;
+    res:stateOfHealth 90.0 .
+
+id:emp-hnatiuk a res:Employee ;
+    rdfs:label "Василь Гнатюк"@uk ;
+    res:email "hnatiuk@zakhid-vde.ua" ;
+    res:employedBy id:co-zakhid-vde ;
+    res:position "технік ВЕУ" .
+
+id:emp-kravets a res:Employee ;
+    rdfs:label "Петро Кравець"@uk ;
+    res:email "kravets@halych-solar.ua" ;
+    res:employedBy id:co-halych-solar ;
+    res:position "електромонтер" .
+
+id:emp-melnyk a res:Employee ;
+    rdfs:label "Ірина Мельник"@uk ;
+    res:email "melnyk@zakhid-vde.ua" ;
+    res:employedBy id:co-zakhid-vde ;
+    res:position "оператор диспетчерського пункту" .
+
+id:ev-0001 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Перегрів редуктора K-02"@uk ;
+    res:affects id:wt-k02 ;
+    res:causedBy id:ev-0002 ;
+    res:documentedIn id:rec-0001 ;
+    res:durationH 14.0 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-11-09T11:32:00"^^xsd:dateTime ;
+    res:severity 4 .
+
+id:ev-0002 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Перевищення температури редуктора K-02"@uk ;
+    res:affects id:wt-k02 ;
+    res:durationH 0.5 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-11-09T11:30:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0003 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Відмова інвертора H-02"@uk ;
+    res:affects id:inv-h02 ;
+    res:documentedIn id:rec-0002 ;
+    res:durationH 6.0 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-11-07T10:15:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0004 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: перегрів генератора (wt-s03)"@uk ;
+    res:affects id:wt-s03 ;
+    res:durationH 1.0 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-07-06T13:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0005 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Перегрів генератора (wt-s03)"@uk ;
+    res:affects id:wt-s03 ;
+    res:causedBy id:ev-0004 ;
+    res:documentedIn id:rec-0003 ;
+    res:durationH 27.9 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-07-06T13:38:00"^^xsd:dateTime ;
+    res:severity 5 .
+
+id:ev-0006 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: знос підшипника редуктора (wt-u04)"@uk ;
+    res:affects id:wt-u04 ;
+    res:durationH 0.8 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-10-07T08:00:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0007 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Знос підшипника редуктора (wt-u04)"@uk ;
+    res:affects id:wt-u04 ;
+    res:causedBy id:ev-0006 ;
+    res:durationH 33.2 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-10-07T09:14:00"^^xsd:dateTime ;
+    res:severity 5 .
+
+id:ev-0008 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: несправність приводу кута атаки (wt-s05)"@uk ;
+    res:affects id:wt-s05 ;
+    res:durationH 0.9 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-05-08T06:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0009 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Несправність приводу кута атаки (wt-s05)"@uk ;
+    res:affects id:wt-s05 ;
+    res:causedBy id:ev-0008 ;
+    res:documentedIn id:rec-0004 ;
+    res:durationH 26.9 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-05-08T06:15:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0010 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: відмова датчика температури (wt-k06)"@uk ;
+    res:affects id:wt-k06 ;
+    res:durationH 0.6 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-08-18T08:00:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0011 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Відмова датчика температури (wt-k06)"@uk ;
+    res:affects id:wt-k06 ;
+    res:causedBy id:ev-0010 ;
+    res:durationH 34.8 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-08-18T09:22:00"^^xsd:dateTime ;
+    res:severity 4 .
+
+id:ev-0012 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: відмова igbt-модуля (inv-kl04)"@uk ;
+    res:affects id:inv-kl04 ;
+    res:durationH 0.3 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-06-15T14:00:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0013 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Відмова IGBT-модуля (inv-kl04)"@uk ;
+    res:affects id:inv-kl04 ;
+    res:causedBy id:ev-0012 ;
+    res:documentedIn id:rec-0005 ;
+    res:durationH 13.5 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-06-15T14:33:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0014 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: перегорання запобіжника dc (inv-h01)"@uk ;
+    res:affects id:inv-h01 ;
+    res:durationH 0.4 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-02-23T16:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0015 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Перегорання запобіжника DC (inv-h01)"@uk ;
+    res:affects id:inv-h01 ;
+    res:causedBy id:ev-0014 ;
+    res:durationH 4.4 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-02-23T16:09:00"^^xsd:dateTime ;
+    res:severity 4 .
+
+id:ev-0016 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: перегрів генератора (wt-u05)"@uk ;
+    res:affects id:wt-u05 ;
+    res:durationH 0.4 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-03-24T15:00:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0017 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Перегрів генератора (wt-u05)"@uk ;
+    res:affects id:wt-u05 ;
+    res:causedBy id:ev-0016 ;
+    res:documentedIn id:rec-0006 ;
+    res:durationH 8.5 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-03-24T16:05:00"^^xsd:dateTime ;
+    res:severity 4 .
+
+id:ev-0018 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: знос підшипника редуктора (wt-u01)"@uk ;
+    res:affects id:wt-u01 ;
+    res:durationH 0.7 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-08-28T17:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0019 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Знос підшипника редуктора (wt-u01)"@uk ;
+    res:affects id:wt-u01 ;
+    res:causedBy id:ev-0018 ;
+    res:durationH 4.1 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-08-28T18:27:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0020 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: несправність приводу кута атаки (wt-k08)"@uk ;
+    res:affects id:wt-k08 ;
+    res:durationH 0.3 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-09-15T08:00:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0021 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Несправність приводу кута атаки (wt-k08)"@uk ;
+    res:affects id:wt-k08 ;
+    res:causedBy id:ev-0020 ;
+    res:documentedIn id:rec-0007 ;
+    res:durationH 31.7 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-09-15T09:04:00"^^xsd:dateTime ;
+    res:severity 3 .
+
+id:ev-0022 a res:AlarmEvent,
+        res:Event ;
+    rdfs:label "Попередження: відмова датчика температури (wt-u05)"@uk ;
+    res:affects id:wt-u05 ;
+    res:durationH 0.3 ;
+    res:kind "AlarmEvent" ;
+    res:occurredAt "2026-01-03T18:00:00"^^xsd:dateTime ;
+    res:severity 2 .
+
+id:ev-0023 a res:Event,
+        res:FailureEvent ;
+    rdfs:label "Відмова датчика температури (wt-u05)"@uk ;
+    res:affects id:wt-u05 ;
+    res:causedBy id:ev-0022 ;
+    res:durationH 9.3 ;
+    res:kind "FailureEvent" ;
+    res:occurredAt "2026-01-03T19:07:00"^^xsd:dateTime ;
+    res:severity 4 .
+
+id:gearbox-k01 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-01"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-k02 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-02"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-k03 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-03"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-k04 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-04"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-k05 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-05"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-k06 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-06"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-k07 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-07"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-k08 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор K-08"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-s01 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор S-01"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-s02 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор S-02"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-s03 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор S-03"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-s04 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор S-04"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-s05 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор S-05"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-s06 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор S-06"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-u01 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор U-01"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-u02 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор U-02"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-u03 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор U-03"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-u04 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор U-04"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-u05 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор U-05"@uk ;
+    res:kind "Gearbox" .
+
+id:gearbox-u06 a res:Component,
+        res:Gearbox ;
+    rdfs:label "Редуктор U-06"@uk ;
+    res:kind "Gearbox" .
+
+id:generator-k01 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-01"@uk ;
+    res:kind "Generator" .
+
+id:generator-k02 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-02"@uk ;
+    res:kind "Generator" .
+
+id:generator-k03 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-03"@uk ;
+    res:kind "Generator" .
+
+id:generator-k04 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-04"@uk ;
+    res:kind "Generator" .
+
+id:generator-k05 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-05"@uk ;
+    res:kind "Generator" .
+
+id:generator-k06 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-06"@uk ;
+    res:kind "Generator" .
+
+id:generator-k07 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-07"@uk ;
+    res:kind "Generator" .
+
+id:generator-k08 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор K-08"@uk ;
+    res:kind "Generator" .
+
+id:generator-s01 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор S-01"@uk ;
+    res:kind "Generator" .
+
+id:generator-s02 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор S-02"@uk ;
+    res:kind "Generator" .
+
+id:generator-s03 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор S-03"@uk ;
+    res:kind "Generator" .
+
+id:generator-s04 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор S-04"@uk ;
+    res:kind "Generator" .
+
+id:generator-s05 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор S-05"@uk ;
+    res:kind "Generator" .
+
+id:generator-s06 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор S-06"@uk ;
+    res:kind "Generator" .
+
+id:generator-u01 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор U-01"@uk ;
+    res:kind "Generator" .
+
+id:generator-u02 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор U-02"@uk ;
+    res:kind "Generator" .
+
+id:generator-u03 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор U-03"@uk ;
+    res:kind "Generator" .
+
+id:generator-u04 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор U-04"@uk ;
+    res:kind "Generator" .
+
+id:generator-u05 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор U-05"@uk ;
+    res:kind "Generator" .
+
+id:generator-u06 a res:Component,
+        res:Generator ;
+    rdfs:label "Генератор U-06"@uk ;
+    res:kind "Generator" .
+
+id:pv-kl01 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ KL-01"@uk ;
+    res:dependsOn id:inv-kl01 ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2400.0 ;
+    res:stateOfHealth 95.0 .
+
+id:pv-m01 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ M-01"@uk ;
+    res:dependsOn id:inv-m01 ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2000.0 ;
+    res:stateOfHealth 95.0 .
+
+id:pv-m02 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ M-02"@uk ;
+    res:dependsOn id:inv-m02 ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 2000.0 ;
+    res:stateOfHealth 94.0 .
+
+id:rec-0001 a res:Record ;
+    rdfs:label "Акт АПС-2026-0847"@uk ;
+    res:date "2026-11-09"^^xsd:date ;
+    res:number "АПС-2026-0847" .
+
+id:rec-0002 a res:Record ;
+    rdfs:label "Акт АПС-2026-0848"@uk ;
+    res:date "2026-11-07"^^xsd:date ;
+    res:number "АПС-2026-0848" .
+
+id:rec-0003 a res:Record ;
+    rdfs:label "Акт АПС-2026-0849"@uk ;
+    res:date "2026-07-06"^^xsd:date ;
+    res:number "АПС-2026-0849" .
+
+id:rec-0004 a res:Record ;
+    rdfs:label "Акт АПС-2026-0850"@uk ;
+    res:date "2026-05-08"^^xsd:date ;
+    res:number "АПС-2026-0850" .
+
+id:rec-0005 a res:Record ;
+    rdfs:label "Акт АПС-2026-0851"@uk ;
+    res:date "2026-06-15"^^xsd:date ;
+    res:number "АПС-2026-0851" .
+
+id:rec-0006 a res:Record ;
+    rdfs:label "Акт АПС-2026-0852"@uk ;
+    res:date "2026-03-24"^^xsd:date ;
+    res:number "АПС-2026-0852" .
+
+id:rec-0007 a res:Record ;
+    rdfs:label "Акт АПС-2026-0853"@uk ;
+    res:date "2026-09-15"^^xsd:date ;
+    res:number "АПС-2026-0853" .
+
+id:rotor-k01 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-01"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-k02 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-02"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-k03 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-03"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-k04 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-04"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-k05 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-05"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-k06 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-06"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-k07 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-07"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-k08 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор K-08"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-s01 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор S-01"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-s02 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор S-02"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-s03 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор S-03"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-s04 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор S-04"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-s05 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор S-05"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-s06 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор S-06"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-u01 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор U-01"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-u02 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор U-02"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-u03 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор U-03"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-u04 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор U-04"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-u05 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор U-05"@uk ;
+    res:kind "Rotor" .
+
+id:rotor-u06 a res:Component,
+        res:Rotor ;
+    rdfs:label "Ротор U-06"@uk ;
+    res:kind "Rotor" .
+
+id:wd-sp-halych-20261111 a res:WeatherData ;
+    rdfs:label "Метеопрогноз СЕС «Галич-1» 11.11.2026"@uk ;
+    res:irradianceWm2 129.0 .
+
+id:wd-sp-kolomyia-20261111 a res:WeatherData ;
+    rdfs:label "Метеопрогноз СЕС «Коломия» 11.11.2026"@uk ;
+    res:irradianceWm2 269.0 .
+
+id:wd-sp-mukachevo-20261111 a res:WeatherData ;
+    rdfs:label "Метеопрогноз СЕС «Мукачево» 11.11.2026"@uk ;
+    res:irradianceWm2 230.0 .
+
+id:wd-wf-karpatska-20261111 a res:WeatherData ;
+    rdfs:label "Метеопрогноз ВЕС «Карпатська» 11.11.2026"@uk ;
+    res:windSpeedMS 9.9 .
+
+id:wd-wf-sambir-20261111 a res:WeatherData ;
+    rdfs:label "Метеопрогноз ВЕС «Самбірська» 11.11.2026"@uk ;
+    res:windSpeedMS 5.8 .
+
+id:wd-wf-uzhok-20261111 a res:WeatherData ;
+    rdfs:label "Метеопрогноз ВЕС «Ужоцька» 11.11.2026"@uk ;
+    res:windSpeedMS 9.8 .
+
+id:anm-k01 a res:Anemometer,
+        res:Equipment,
+        res:Sensor ;
+    rdfs:label "Анемометр ANM-K01"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "Anemometer" ;
+    res:model "Thies First Class" ;
+    res:observes id:wt-k01 .
+
+id:anm-s01 a res:Anemometer,
+        res:Equipment,
+        res:Sensor ;
+    rdfs:label "Анемометр ANM-S01"@uk ;
+    res:installedAt id:wf-sambir ;
+    res:kind "Anemometer" ;
+    res:model "Thies First Class" ;
+    res:observes id:wt-s01 .
+
+id:anm-u01 a res:Anemometer,
+        res:Equipment,
+        res:Sensor ;
+    rdfs:label "Анемометр ANM-U01"@uk ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "Anemometer" ;
+    res:model "Thies First Class" ;
+    res:observes id:wt-u01 .
+
+id:emp-fedak a res:Employee ;
+    rdfs:label "Олена Федак"@uk ;
+    res:email "fedak@karpaty-energy.ua" ;
+    res:employedBy id:co-karpaty-energy ;
+    res:position "інженер з ТО" .
+
+id:emp-tkach a res:Employee ;
+    rdfs:label "Наталія Ткач"@uk ;
+    res:email "tkach@halych-solar.ua" ;
+    res:employedBy id:co-halych-solar ;
+    res:position "інженер СЕС" .
+
+id:inv-h03 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор H-03"@uk ;
+    res:dependsOn id:tr-halych ;
+    res:installedAt id:sp-halych ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 85.0 .
+
+id:inv-h04 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор H-04"@uk ;
+    res:dependsOn id:tr-halych ;
+    res:installedAt id:sp-halych ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 81.0 .
+
+id:inv-kl01 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор KL-01"@uk ;
+    res:dependsOn id:tr-kolomyia ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 92.0 .
+
+id:inv-kl03 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор KL-03"@uk ;
+    res:dependsOn id:tr-kolomyia ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 89.0 .
+
+id:inv-m03 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор M-03"@uk ;
+    res:dependsOn id:tr-mukachevo ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 98.0 .
+
+id:part-brush a res:SparePart ;
+    rdfs:label "Щітки генератора"@uk ;
+    res:unitCostEUR 120.0 .
+
+id:part-fan a res:SparePart ;
+    rdfs:label "Вентилятор охолодження"@uk ;
+    res:unitCostEUR 650.0 .
+
+id:part-fuse a res:SparePart ;
+    rdfs:label "Запобіжник DC 1500 В"@uk ;
+    res:unitCostEUR 60.0 .
+
+id:part-igbt a res:SparePart ;
+    rdfs:label "IGBT-модуль інвертора"@uk ;
+    res:unitCostEUR 1450.0 .
+
+id:part-pitch a res:SparePart ;
+    rdfs:label "Привід кута атаки"@uk ;
+    res:unitCostEUR 3100.0 .
+
+id:part-sensor a res:SparePart ;
+    rdfs:label "Датчик температури PT100"@uk ;
+    res:unitCostEUR 75.0 .
+
+id:pv-h01 a res:Equipment,
+        res:GeneratingUnit,
+        res:PVArray ;
+    rdfs:label "ФЕМ H-01"@uk ;
+    res:dependsOn id:inv-h01 ;
+    res:installedAt id:sp-halych ;
+    res:kind "PVArray" ;
+    res:model "LONGi Hi-MO 5" ;
+    res:ratedPowerKW 3000.0 ;
+    res:stateOfHealth 86.0 .
+
+id:pyr-h01 a res:Equipment,
+        res:Pyranometer,
+        res:Sensor ;
+    rdfs:label "Піранометр PYR-H01"@uk ;
+    res:installedAt id:sp-halych ;
+    res:kind "Pyranometer" ;
+    res:model "Kipp & Zonen SMP10" ;
+    res:observes id:pv-h01 .
+
+id:pyr-kl01 a res:Equipment,
+        res:Pyranometer,
+        res:Sensor ;
+    rdfs:label "Піранометр PYR-KL01"@uk ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "Pyranometer" ;
+    res:model "Kipp & Zonen SMP10" ;
+    res:observes id:pv-kl01 .
+
+id:pyr-m01 a res:Equipment,
+        res:Pyranometer,
+        res:Sensor ;
+    rdfs:label "Піранометр PYR-M01"@uk ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "Pyranometer" ;
+    res:model "Kipp & Zonen SMP10" ;
+    res:observes id:pv-m01 .
+
+id:region-ivano-frankivsk a res:Region ;
+    rdfs:label "Івано-Франківська область"@uk .
+
+id:region-lviv a res:Region ;
+    rdfs:label "Львівська область"@uk .
+
+id:region-zakarpattia a res:Region ;
+    rdfs:label "Закарпатська область"@uk .
+
+id:sub-ivano-frankivsk a res:Equipment,
+        res:Substation ;
+    rdfs:label "ПС «Івано-Франківськ»"@uk ;
+    res:dependsOn id:grid-west ;
+    res:kind "Substation" ;
+    res:model "ПС 110/35 кВ" ;
+    res:ratedPowerKW 80000.0 ;
+    res:stateOfHealth 86.0 .
+
+id:sub-lviv a res:Equipment,
+        res:Substation ;
+    rdfs:label "ПС «Львів-Західна»"@uk ;
+    res:dependsOn id:grid-west ;
+    res:kind "Substation" ;
+    res:model "ПС 110/35 кВ" ;
+    res:ratedPowerKW 80000.0 ;
+    res:stateOfHealth 95.0 .
+
+id:sub-zakarpattia a res:Equipment,
+        res:Substation ;
+    rdfs:label "ПС «Мукачево»"@uk ;
+    res:dependsOn id:grid-west ;
+    res:kind "Substation" ;
+    res:model "ПС 110/35 кВ" ;
+    res:ratedPowerKW 80000.0 ;
+    res:stateOfHealth 85.0 .
+
+id:tmp-k01 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K01"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k01 .
+
+id:tmp-k02 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K02"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k02 .
+
+id:tmp-k03 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K03"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k03 .
+
+id:tmp-k04 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K04"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k04 .
+
+id:tmp-k05 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K05"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k05 .
+
+id:tmp-k06 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K06"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k06 .
+
+id:tmp-k07 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K07"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k07 .
+
+id:tmp-k08 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-K08"@uk ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-k08 .
+
+id:tmp-s01 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-S01"@uk ;
+    res:installedAt id:wf-sambir ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-s01 .
+
+id:tmp-s02 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-S02"@uk ;
+    res:installedAt id:wf-sambir ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-s02 .
+
+id:tmp-s03 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-S03"@uk ;
+    res:installedAt id:wf-sambir ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-s03 .
+
+id:tmp-s04 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-S04"@uk ;
+    res:installedAt id:wf-sambir ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-s04 .
+
+id:tmp-s05 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-S05"@uk ;
+    res:installedAt id:wf-sambir ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-s05 .
+
+id:tmp-s06 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-S06"@uk ;
+    res:installedAt id:wf-sambir ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-s06 .
+
+id:tmp-u01 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-U01"@uk ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-u01 .
+
+id:tmp-u02 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-U02"@uk ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-u02 .
+
+id:tmp-u03 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-U03"@uk ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-u03 .
+
+id:tmp-u04 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-U04"@uk ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-u04 .
+
+id:tmp-u05 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-U05"@uk ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-u05 .
+
+id:tmp-u06 a res:Equipment,
+        res:Sensor,
+        res:TemperatureSensor ;
+    rdfs:label "Термодатчик TMP-U06"@uk ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "TemperatureSensor" ;
+    res:model "PT100" ;
+    res:observes id:wt-u06 .
+
+id:wt-s06 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ S-06"@uk ;
+    res:dependsOn id:tr-sambir ;
+    res:hasPart id:gearbox-s06,
+        id:generator-s06,
+        id:rotor-s06 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-sambir ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 83.0 .
+
+id:emp-bilyk a res:Employee ;
+    rdfs:label "Софія Білик"@uk ;
+    res:email "bilyk@karpaty-energy.ua" ;
+    res:employedBy id:co-karpaty-energy ;
+    res:position "диспетчер" .
+
+id:emp-danyliuk a res:Employee ;
+    rdfs:label "Роман Данилюк"@uk ;
+    res:email "danyliuk@zakhid-vde.ua" ;
+    res:employedBy id:co-zakhid-vde ;
+    res:position "начальник служби ТО" .
+
+id:emp-kovalchuk a res:Employee ;
+    rdfs:label "Олег Ковальчук"@uk ;
+    res:email "kovalchuk@zakhid-vde.ua" ;
+    res:employedBy id:co-zakhid-vde ;
+    res:position "інженер з ТО" .
+
+id:emp-lukach a res:Employee ;
+    rdfs:label "Михайло Лукач"@uk ;
+    res:email "lukach@karpaty-energy.ua" ;
+    res:employedBy id:co-karpaty-energy ;
+    res:position "електромонтер" .
+
+id:grid-west a res:GridNode ;
+    rdfs:label "Вузол енергосистеми «Захід»"@uk ;
+    res:voltageKV 330 .
+
+id:inv-kl02 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор KL-02"@uk ;
+    res:dependsOn id:tr-kolomyia ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 89.0 .
+
+id:inv-m01 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор M-01"@uk ;
+    res:dependsOn id:tr-mukachevo ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 99.0 .
+
+id:inv-m02 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор M-02"@uk ;
+    res:dependsOn id:tr-mukachevo ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 80.0 .
+
+id:inv-m04 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор M-04"@uk ;
+    res:dependsOn id:tr-mukachevo ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 95.0 .
+
+id:part-bearing a res:SparePart ;
+    rdfs:label "Підшипник вихідного вала"@uk ;
+    res:unitCostEUR 2400.0 .
+
+id:wt-k03 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-03"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k03,
+        id:generator-k03,
+        id:rotor-k03 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 71.0 .
+
+id:wt-k04 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-04"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k04,
+        id:generator-k04,
+        id:rotor-k04 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 79.0 .
+
+id:wt-k05 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-05"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k05,
+        id:generator-k05,
+        id:rotor-k05 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 82.0 .
+
+id:wt-s02 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ S-02"@uk ;
+    res:dependsOn id:tr-sambir ;
+    res:hasPart id:gearbox-s02,
+        id:generator-s02,
+        id:rotor-s02 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-sambir ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 85.0 .
+
+id:wt-s04 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ S-04"@uk ;
+    res:dependsOn id:tr-sambir ;
+    res:hasPart id:gearbox-s04,
+        id:generator-s04,
+        id:rotor-s04 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-sambir ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 86.0 .
+
+id:wt-u02 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ U-02"@uk ;
+    res:dependsOn id:tr-uzhok ;
+    res:hasPart id:gearbox-u02,
+        id:generator-u02,
+        id:rotor-u02 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 94.0 .
+
+id:wt-u06 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ U-06"@uk ;
+    res:dependsOn id:tr-uzhok ;
+    res:hasPart id:gearbox-u06,
+        id:generator-u06,
+        id:rotor-u06 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 73.0 .
+
+id:emp-boiko a res:Employee ;
+    rdfs:label "Андрій Бойко"@uk ;
+    res:email "boiko@halych-solar.ua" ;
+    res:employedBy id:co-halych-solar ;
+    res:position "технік СЕС" .
+
+id:tr-halych a res:Equipment,
+        res:Transformer ;
+    rdfs:label "Трансформатор СЕС «Галич-1»"@uk ;
+    res:dependsOn id:sub-ivano-frankivsk ;
+    res:installedAt id:sp-halych ;
+    res:kind "Transformer" ;
+    res:model "ТДН-63000/110" ;
+    res:ratedPowerKW 63000.0 ;
+    res:stateOfHealth 89.0 .
+
+id:tr-mukachevo a res:Equipment,
+        res:Transformer ;
+    rdfs:label "Трансформатор СЕС «Мукачево»"@uk ;
+    res:dependsOn id:sub-zakarpattia ;
+    res:installedAt id:sp-mukachevo ;
+    res:kind "Transformer" ;
+    res:model "ТДН-63000/110" ;
+    res:ratedPowerKW 63000.0 ;
+    res:stateOfHealth 90.0 .
+
+id:wt-k07 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-07"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k07,
+        id:generator-k07,
+        id:rotor-k07 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 97.0 .
+
+id:wt-s01 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ S-01"@uk ;
+    res:dependsOn id:tr-sambir ;
+    res:hasPart id:gearbox-s01,
+        id:generator-s01,
+        id:rotor-s01 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-sambir ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 88.0 .
+
+id:wt-u03 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ U-03"@uk ;
+    res:dependsOn id:tr-uzhok ;
+    res:hasPart id:gearbox-u03,
+        id:generator-u03,
+        id:rotor-u03 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 71.0 .
+
+id:co-halych-solar a res:Company ;
+    rdfs:label "ТОВ «Галич Солар»"@uk ;
+    res:taxId "42345678" .
+
+id:emp-popovych a res:Employee ;
+    rdfs:label "Іван Попович"@uk ;
+    res:email "popovych@karpaty-energy.ua" ;
+    res:employedBy id:co-karpaty-energy ;
+    res:position "технік ВЕУ" .
+
+id:inv-h01 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор H-01"@uk ;
+    res:dependsOn id:tr-halych ;
+    res:installedAt id:sp-halych ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 87.0 .
+
+id:inv-h02 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор H-02"@uk ;
+    res:dependsOn id:tr-halych ;
+    res:installedAt id:sp-halych ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 62.0 .
+
+id:part-cable a res:SparePart ;
+    rdfs:label "Кабель DC 6 мм², 50 м"@uk ;
+    res:unitCostEUR 210.0 .
+
+id:tr-kolomyia a res:Equipment,
+        res:Transformer ;
+    rdfs:label "Трансформатор СЕС «Коломия»"@uk ;
+    res:dependsOn id:sub-ivano-frankivsk ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "Transformer" ;
+    res:model "ТДН-63000/110" ;
+    res:ratedPowerKW 63000.0 ;
+    res:stateOfHealth 90.0 .
+
+id:wt-k01 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-01"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k01,
+        id:generator-k01,
+        id:rotor-k01 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 87.0 .
+
+id:wt-s03 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ S-03"@uk ;
+    res:dependsOn id:tr-sambir ;
+    res:hasPart id:gearbox-s03,
+        id:generator-s03,
+        id:rotor-s03 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-sambir ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 90.0 .
+
+id:wt-s05 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ S-05"@uk ;
+    res:dependsOn id:tr-sambir ;
+    res:hasPart id:gearbox-s05,
+        id:generator-s05,
+        id:rotor-s05 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-sambir ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 75.0 .
+
+id:co-karpaty-energy a res:Company ;
+    rdfs:label "ТОВ «Карпати Енерджі»"@uk ;
+    res:taxId "43456789" .
+
+id:inv-kl04 a res:Equipment,
+        res:Inverter ;
+    rdfs:label "Інвертор KL-04"@uk ;
+    res:dependsOn id:tr-kolomyia ;
+    res:installedAt id:sp-kolomyia ;
+    res:kind "Inverter" ;
+    res:model "Huawei SUN2000-330KTL" ;
+    res:ratedPowerKW 300.0 ;
+    res:stateOfHealth 84.0 .
+
+id:tr-sambir a res:Equipment,
+        res:Transformer ;
+    rdfs:label "Трансформатор ВЕС «Самбірська»"@uk ;
+    res:dependsOn id:sub-lviv ;
+    res:installedAt id:wf-sambir ;
+    res:kind "Transformer" ;
+    res:model "ТДН-63000/110" ;
+    res:ratedPowerKW 63000.0 ;
+    res:stateOfHealth 96.0 .
+
+id:tr-uzhok a res:Equipment,
+        res:Transformer ;
+    rdfs:label "Трансформатор ВЕС «Ужоцька»"@uk ;
+    res:dependsOn id:sub-zakarpattia ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "Transformer" ;
+    res:model "ТДН-63000/110" ;
+    res:ratedPowerKW 63000.0 ;
+    res:stateOfHealth 93.0 .
+
+id:wt-k06 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-06"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k06,
+        id:generator-k06,
+        id:rotor-k06 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 96.0 .
+
+id:wt-u01 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ U-01"@uk ;
+    res:dependsOn id:tr-uzhok ;
+    res:hasPart id:gearbox-u01,
+        id:generator-u01,
+        id:rotor-u01 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 88.0 .
+
+id:wt-u04 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ U-04"@uk ;
+    res:dependsOn id:tr-uzhok ;
+    res:hasPart id:gearbox-u04,
+        id:generator-u04,
+        id:rotor-u04 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 89.0 .
+
+id:co-zakhid-vde a res:Company ;
+    rdfs:label "ТОВ «Захід ВДЕ»"@uk ;
+    res:taxId "41234567" .
+
+id:part-oil a res:SparePart ;
+    rdfs:label "Мастило редукторне 20 л"@uk ;
+    res:unitCostEUR 180.0 .
+
+id:wt-k02 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-02"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k02,
+        id:generator-k02,
+        id:rotor-k02 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 74.0 .
+
+id:wt-k08 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ K-08"@uk ;
+    res:dependsOn id:tr-karpatska ;
+    res:hasPart id:gearbox-k08,
+        id:generator-k08,
+        id:rotor-k08 ;
+    res:hubHeightM 115.0 ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "WindTurbine" ;
+    res:model "Siemens Gamesa SG 6.6-170" ;
+    res:ratedPowerKW 6600.0 ;
+    res:stateOfHealth 93.0 .
+
+id:tr-karpatska a res:Equipment,
+        res:Transformer ;
+    rdfs:label "Трансформатор ВЕС «Карпатська»"@uk ;
+    res:dependsOn id:sub-lviv ;
+    res:installedAt id:wf-karpatska ;
+    res:kind "Transformer" ;
+    res:model "ТДН-63000/110" ;
+    res:ratedPowerKW 63000.0 ;
+    res:stateOfHealth 90.0 .
+
+id:wt-u05 a res:Equipment,
+        res:GeneratingUnit,
+        res:WindTurbine ;
+    rdfs:label "ВЕУ U-05"@uk ;
+    res:dependsOn id:tr-uzhok ;
+    res:hasPart id:gearbox-u05,
+        id:generator-u05,
+        id:rotor-u05 ;
+    res:hubHeightM 112.0 ;
+    res:installedAt id:wf-uzhok ;
+    res:kind "WindTurbine" ;
+    res:model "Vestas V136-4.2" ;
+    res:ratedPowerKW 4200.0 ;
+    res:stateOfHealth 91.0 .
+
+id:part-filter a res:SparePart ;
+    rdfs:label "Фільтр мастила"@uk ;
+    res:unitCostEUR 95.0 .
+
+id:sp-halych a res:Plant,
+        res:SolarPlant ;
+    rdfs:label "СЕС «Галич-1»"@uk ;
+    res:commissioningDate "2020-05-20"^^xsd:date ;
+    res:installedCapacityMW 12.0 ;
+    res:kind "SolarPlant" ;
+    res:locatedIn id:region-ivano-frankivsk ;
+    res:operatedBy id:co-halych-solar .
+
+id:sp-mukachevo a res:Plant,
+        res:SolarPlant ;
+    rdfs:label "СЕС «Мукачево»"@uk ;
+    res:commissioningDate "2023-05-12"^^xsd:date ;
+    res:installedCapacityMW 8.0 ;
+    res:kind "SolarPlant" ;
+    res:locatedIn id:region-zakarpattia ;
+    res:operatedBy id:co-karpaty-energy .
+
+id:sp-kolomyia a res:Plant,
+        res:SolarPlant ;
+    rdfs:label "СЕС «Коломия»"@uk ;
+    res:commissioningDate "2022-07-01"^^xsd:date ;
+    res:installedCapacityMW 9.6 ;
+    res:kind "SolarPlant" ;
+    res:locatedIn id:region-ivano-frankivsk ;
+    res:operatedBy id:co-halych-solar .
+
+id:wf-sambir a res:Plant,
+        res:WindFarm ;
+    rdfs:label "ВЕС «Самбірська»"@uk ;
+    res:commissioningDate "2023-09-01"^^xsd:date ;
+    res:installedCapacityMW 25.2 ;
+    res:kind "WindFarm" ;
+    res:locatedIn id:region-lviv ;
+    res:operatedBy id:co-zakhid-vde .
+
+id:wf-uzhok a res:Plant,
+        res:WindFarm ;
+    rdfs:label "ВЕС «Ужоцька»"@uk ;
+    res:commissioningDate "2024-04-10"^^xsd:date ;
+    res:installedCapacityMW 25.2 ;
+    res:kind "WindFarm" ;
+    res:locatedIn id:region-zakarpattia ;
+    res:operatedBy id:co-karpaty-energy .
+
+id:wf-karpatska a res:Plant,
+        res:WindFarm ;
+    rdfs:label "ВЕС «Карпатська»"@uk ;
+    res:commissioningDate "2021-06-15"^^xsd:date ;
+    res:installedCapacityMW 52.8 ;
+    res:kind "WindFarm" ;
+    res:locatedIn id:region-lviv ;
+    res:operatedBy id:co-zakhid-vde .
+

@@ -1,0 +1,10 @@
+# P5. Які події з критичністю ≥ 4 сталися і чи складено для них акт?
+PREFIX res:  <https://kms.lnu.edu.ua/fenyn/res#>
+PREFIX id:   <https://kms.lnu.edu.ua/fenyn/res/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?ev ?severity ?record WHERE {
+  ?ev a res:Event ; res:severity ?severity .
+  FILTER(?severity >= 4)
+  OPTIONAL { ?ev res:documentedIn ?r . ?r res:number ?record }
+}
+ORDER BY ?ev

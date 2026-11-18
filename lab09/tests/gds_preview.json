@@ -1,0 +1,223 @@
+{
+ "top10": [
+  [
+   "wf-karpatska",
+   "ВЕС «Карпатська»",
+   "plant",
+   0.0201
+  ],
+  [
+   "rule-storm-stop",
+   "Зупинка при штормовому вітрі",
+   "controlrule",
+   0.0171
+  ],
+  [
+   "wf-sambir",
+   "ВЕС «Самбірська»",
+   "plant",
+   0.0162
+  ],
+  [
+   "wf-uzhok",
+   "ВЕС «Ужоцька»",
+   "plant",
+   0.0156
+  ],
+  [
+   "wt-u05",
+   "ВЕУ U-05",
+   "equipment",
+   0.0128
+  ],
+  [
+   "wt-k02",
+   "ВЕУ K-02",
+   "equipment",
+   0.0113
+  ],
+  [
+   "sp-kolomyia",
+   "СЕС «Коломия»",
+   "plant",
+   0.0112
+  ],
+  [
+   "wt-k08",
+   "ВЕУ K-08",
+   "equipment",
+   0.011
+  ],
+  [
+   "sp-mukachevo",
+   "СЕС «Мукачево»",
+   "plant",
+   0.0105
+  ],
+  [
+   "wt-u01",
+   "ВЕУ U-01",
+   "equipment",
+   0.0104
+  ]
+ ],
+ "communities": [
+  {
+   "size": 57,
+   "plants": [
+    "ВЕС «Карпатська»"
+   ],
+   "labels": {
+    "component": 18,
+    "equipment": 15,
+    "measurement": 14,
+    "event": 4,
+    "controlrule": 2,
+    "plant": 1,
+    "maintenancework": 1,
+    "weatherdata": 1,
+    "forecast": 1
+   }
+  },
+  {
+   "size": 50,
+   "plants": [
+    "СЕС «Галич-1»",
+    "СЕС «Коломия»"
+   ],
+   "labels": {
+    "equipment": 21,
+    "maintenancework": 5,
+    "event": 5,
+    "measurement": 4,
+    "plant": 2,
+    "employee": 2,
+    "weatherdata": 2,
+    "forecast": 2,
+    "record": 2,
+    "sparepart": 2,
+    "company": 1,
+    "controlrule": 1,
+    "region": 1
+   }
+  },
+  {
+   "size": 45,
+   "plants": [
+    "ВЕС «Ужоцька»"
+   ],
+   "labels": {
+    "component": 12,
+    "equipment": 11,
+    "measurement": 10,
+    "maintenancework": 4,
+    "event": 3,
+    "plant": 1,
+    "employee": 1,
+    "weatherdata": 1,
+    "region": 1,
+    "forecast": 1
+   }
+  },
+  {
+   "size": 41,
+   "plants": [
+    "ВЕС «Самбірська»"
+   ],
+   "labels": {
+    "component": 12,
+    "equipment": 12,
+    "measurement": 10,
+    "plant": 1,
+    "weatherdata": 1,
+    "gridnode": 1,
+    "controlrule": 1,
+    "forecast": 1,
+    "region": 1,
+    "event": 1
+   }
+  },
+  {
+   "size": 33,
+   "plants": [],
+   "labels": {
+    "maintenancework": 10,
+    "employee": 9,
+    "component": 3,
+    "sparepart": 3,
+    "company": 2,
+    "equipment": 2,
+    "measurement": 2,
+    "event": 2
+   }
+  },
+  {
+   "size": 28,
+   "plants": [],
+   "labels": {
+    "component": 6,
+    "event": 6,
+    "equipment": 4,
+    "measurement": 4,
+    "maintenancework": 3,
+    "sparepart": 3,
+    "record": 2
+   }
+  },
+  {
+   "size": 19,
+   "plants": [
+    "СЕС «Мукачево»"
+   ],
+   "labels": {
+    "equipment": 10,
+    "maintenancework": 3,
+    "measurement": 2,
+    "plant": 1,
+    "weatherdata": 1,
+    "forecast": 1,
+    "sparepart": 1
+   }
+  },
+  {
+   "size": 12,
+   "plants": [],
+   "labels": {
+    "component": 3,
+    "equipment": 2,
+    "measurement": 2,
+    "event": 2,
+    "maintenancework": 1,
+    "record": 1,
+    "sparepart": 1
+   }
+  },
+  {
+   "size": 11,
+   "plants": [],
+   "labels": {
+    "component": 3,
+    "equipment": 2,
+    "measurement": 2,
+    "event": 2,
+    "maintenancework": 1,
+    "record": 1
+   }
+  },
+  {
+   "size": 11,
+   "plants": [],
+   "labels": {
+    "component": 3,
+    "event": 3,
+    "equipment": 2,
+    "measurement": 2,
+    "record": 1
+   }
+  }
+ ],
+ "modularity": 0.704,
+ "n": 307,
+ "m": 500,
+ "components": 1
+}

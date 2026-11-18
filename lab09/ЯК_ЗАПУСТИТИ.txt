@@ -1,0 +1,45 @@
+ЛР 9 — Графова база знань у Neo4j. Фенин Ю.М., ФеІ-42
+======================================================================
+
+КРОК 1. ВСТАНОВИТИ (один раз)
+  • Neo4j Desktop: neo4j.com/download (безкоштовно; при запуску попросить ключ активації — він показується на сайті після завантаження)
+  • Python 3.10+ (якщо ще немає)
+
+КРОК 2. СТВОРИТИ БАЗУ В NEO4J DESKTOP
+  1. New → Create project → Add → Local DBMS
+  2. Назва: kms-lab09, пароль: придумай (наприклад kms-lab09-pass), версія 5.x → Create
+  3. Клацнути по базі → праворуч вкладка Plugins → Graph Data Science Library → Install
+  4. Start (зелена кнопка)
+
+КРОК 3. ПОКЛАСТИ CSV У ТЕКУ IMPORT
+  Біля бази «⋯» → Open folder → Import → скопіювати туди ВСІ файли з теки data/ цього проєкту (*.csv)
+
+КРОК 4. ЗАПУСТИТИ (Термінал у теці проєкту)
+  pip install -r requirements.txt
+  export NEO4J_PASSWORD='kms-lab09-pass'
+  python3 run_all.py
+
+  Якщо крок 3 не вдався:          python3 run_all.py --no-load-csv
+  Якщо GDS не встановився:         python3 run_all.py --skip-gds
+
+  Скрипт сам: створить обмеження й індекси → імпортує дані двічі (перевірка ідемпотентності) →
+  покаже порушення обмеження → виконає 10 запитів і звірить їх → PageRank і Louvain → PROFILE до/після
+  індексу → порівняє SPARQL і Cypher → перевірить text-to-Cypher.
+  Результати: docs/*.md і results/all_results.json
+
+КРОК 5. СКРІНШОТИ ДЛЯ ЗВІТУ (Neo4j Browser: кнопка Open біля бази)
+  1. CALL db.schema.visualization()                         — схема графа
+  2. SHOW CONSTRAINTS   і   SHOW INDEXES                    — обмеження та індекси
+  3. MATCH (n) RETURN count(n);  MATCH ()-[r]->() RETURN count(r)
+  4. CREATE (:Entity:Plant {id:'wf-karpatska'})             — червона помилка обмеження
+  5. MATCH path = shortestPath((a:Event {id:'ev-0001'})-[*..6]-(b:Substation {id:'sub-lviv'})) RETURN path
+                                                            — граф шляху (вкладка Graph)
+  6. MATCH p=(x:Equipment)-[:DEPENDS_ON*1..4]->(s:Substation {id:'sub-ivano-frankivsk'}) RETURN p
+                                                            — граф аналізу впливу
+  7. будь-який запит з queries/ (наприклад q04) — таблиця результату
+  8. PROFILE + текст q03 — план виконання
+  9. MATCH (n:Entity) RETURN n.name, n.pagerank, n.community ORDER BY n.pagerank DESC LIMIT 10
+                                                            — результати GDS у вузлах
+
+КРОК 6. НАДІСЛАТИ
+  results/all_results.json + скріншоти → на їх основі буде написано звіт.

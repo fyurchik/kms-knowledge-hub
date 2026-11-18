@@ -1,0 +1,7 @@
+from,to,source,confidence,validFrom
+fc-wf-karpatska-20261111,wd-wf-karpatska-20261111,forecast-model,0.85,2026-01-01
+fc-wf-sambir-20261111,wd-wf-sambir-20261111,forecast-model,0.85,2026-01-01
+fc-wf-uzhok-20261111,wd-wf-uzhok-20261111,forecast-model,0.85,2026-01-01
+fc-sp-halych-20261111,wd-sp-halych-20261111,forecast-model,0.85,2026-01-01
+fc-sp-kolomyia-20261111,wd-sp-kolomyia-20261111,forecast-model,0.85,2026-01-01
+fc-sp-mukachevo-20261111,wd-sp-mukachevo-20261111,forecast-model,0.85,2026-01-01

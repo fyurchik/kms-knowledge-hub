@@ -1,0 +1,7 @@
+from,to,source,confidence,validFrom
+wf-karpatska,region-lviv,onto-lab06,1.0,2026-01-01
+wf-sambir,region-lviv,onto-lab06,1.0,2026-01-01
+wf-uzhok,region-zakarpattia,onto-lab06,1.0,2026-01-01
+sp-halych,region-ivano-frankivsk,onto-lab06,1.0,2026-01-01
+sp-kolomyia,region-ivano-frankivsk,onto-lab06,1.0,2026-01-01
+sp-mukachevo,region-zakarpattia,onto-lab06,1.0,2026-01-01

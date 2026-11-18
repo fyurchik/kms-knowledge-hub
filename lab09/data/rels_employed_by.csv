@@ -1,0 +1,13 @@
+from,to,source,confidence,validFrom
+emp-kovalchuk,co-zakhid-vde,hr-register,1.0,2026-01-01
+emp-melnyk,co-zakhid-vde,hr-register,1.0,2026-01-01
+emp-hnatiuk,co-zakhid-vde,hr-register,1.0,2026-01-01
+emp-savchuk,co-zakhid-vde,hr-register,1.0,2026-01-01
+emp-boiko,co-halych-solar,hr-register,1.0,2026-01-01
+emp-tkach,co-halych-solar,hr-register,1.0,2026-01-01
+emp-kravets,co-halych-solar,hr-register,1.0,2026-01-01
+emp-popovych,co-karpaty-energy,hr-register,1.0,2026-01-01
+emp-fedak,co-karpaty-energy,hr-register,1.0,2026-01-01
+emp-lukach,co-karpaty-energy,hr-register,1.0,2026-01-01
+emp-bilyk,co-karpaty-energy,hr-register,1.0,2026-01-01
+emp-danyliuk,co-zakhid-vde,hr-register,1.0,2026-01-01
